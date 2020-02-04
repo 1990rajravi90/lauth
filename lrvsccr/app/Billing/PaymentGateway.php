@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Billing;
 use Illuminate\Support\Str;
 class PaymentGateway
@@ -16,7 +15,7 @@ class PaymentGateway
             'amount' => $amount,
             'confirmation_number'=> Str::random(),
             'message' => 'transaction completed',
-            'currency' => $this->currency
+            'currency' => $this->currency,
         ];
     }
 }
